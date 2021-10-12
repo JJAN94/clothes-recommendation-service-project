@@ -1,0 +1,270 @@
+.mediaViewInfo {
+    --web-view-name: result_shop;
+    --web-view-id: result_shop;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+
+:root {
+    --web-view-ids: result_shop;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(41, 41, 41, 1);
+    border: none;
+}
+
+#result_shop {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    --web-view-name: result_shop;
+    --web-view-id: result_shop;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+
+#Back_4_1 {
+    position: absolute;
+    width: 98px;
+    height: 37px;
+    left: 5%;
+    top: 5%;
+    overflow: visible;
+    --web-animation: fadein 0.3s ease-out;
+    --web-action-type: page;
+    --web-action-target: choice_item_type.html;
+    cursor: pointer;
+}
+
+#back-arrow_do {
+    fill: rgba(255, 255, 255, 1);
+    stroke: rgba(0, 0, 0, 0);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+
+.back-arrow_do {
+    overflow: visible;
+    position: absolute;
+    width: 32px;
+    height: 20px;
+    transform: translate(-15px, -53px) matrix(1, 0, 0, 1, 8.9999, 63.9998) rotate(90deg);
+    transform-origin: center;
+    left: 0px;
+    top: 0px;
+}
+
+#back_dp {
+    fill: transparent;
+}
+
+.back_dp {
+    position: absolute;
+    overflow: visible;
+    width: 98px;
+    height: 37px;
+    left: 0px;
+    top: 0px;
+}
+
+#Back_dq {
+    left: 36px;
+    top: 5px;
+    position: absolute;
+    overflow: visible;
+    width: 42px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 1);
+}
+
+#return_capture_4_1 {
+    position: absolute;
+    width: 36.448px;
+    height: 31.64px;
+    right: 20%;
+    top: 6%;
+    overflow: visible;
+    --web-animation: fadein 0.3s ease-out;
+    --web-action-type: page;
+    --web-action-target: capture.html;
+    cursor: pointer;
+}
+
+#camera_line_ds {
+    opacity: 0.5;
+    fill: transparent;
+}
+
+.camera_line_ds {
+    overflow: visible;
+    position: absolute;
+    width: 35.973px;
+    height: 31.64px;
+    left: 0px;
+    top: 0px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+#camera_dt {
+    position: absolute;
+    width: 36.448px;
+    height: 30.14px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+
+#Search_4_1 {
+    fill: transparent;
+    stroke: rgba(255, 255, 255, 1);
+    stroke-width: 1.5px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+
+.Search_4_1 {
+    overflow: visible;
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    right: 10%;
+    top: 6.5%;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    --web-animation: fadein 0.3s ease-out;
+    --web-action-type: page;
+    --web-action-target: choice_item_type.html;
+    cursor: pointer;
+}
+
+#page_subject_dv {
+    position: absolute;
+    width: 311.5px;
+    height: 45px;
+    left: 10%;
+    top: 13%;
+    overflow: visible;
+}
+
+#subject_line_4_1 {
+    fill: transparent;
+    stroke: rgba(255, 255, 255, 1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+
+.subject_line_4_1 {
+    overflow: visible;
+    position: absolute;
+    width: 311px;
+    height: 1px;
+    left: 0.5px;
+    top: 42.5px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+#subject {
+    fill: transparent;
+}
+
+.subject {
+    position: absolute;
+    overflow: visible;
+    width: 311px;
+    height: 45px;
+    left: 0px;
+    top: 0px;
+}
+
+#Results_from_Shop {
+    left: 0px;
+    top: 7px;
+    position: absolute;
+    overflow: visible;
+    width: 185px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    color: rgba(255, 255, 255, 1);
+}
+
+#item_dz {
+    position: relative;
+    width: 89%;
+    height: 100%;
+    left: 10%;
+    top: 24%;
+    overflow-y: visible;
+    overflow-x: hidden;
+}
+
+#item_d {
+    position: relative;
+    width: 200px;
+    height: 270px;
+    overflow: visible;
+}
+
+#Group {
+    position: relative;
+    width: 142px;
+    height: 24px;
+    left: 0px;
+    overflow: visible;
+}
+
+#n___ {
+    top: 4px;
+    position: relative;
+    overflow: visible;
+    width: 31px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+}
+
+#Group_eb {
+    position: relative;
+    width: 142px;
+    height: 24px;
+    left: 0px;
+    overflow: visible;
+}
+
+#n____eg {
+    top: 4px;
+    position: relative;
+    overflow: visible;
+    width: 31px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+}
