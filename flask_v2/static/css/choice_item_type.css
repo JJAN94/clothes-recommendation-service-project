@@ -1,0 +1,230 @@
+.mediaViewInfo {
+    --web-view-name: choice_item_type;
+    --web-view-id: choice_item_type;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+
+:root {
+    --web-view-ids: choice_item_type;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+#choice_item_type {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(41, 41, 41, 1);
+    overflow: hidden;
+    --web-view-name: choice_item_type;
+    --web-view-id: choice_item_type;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+
+#Back_3 {
+    position: absolute;
+    width: 98px;
+    height: 37px;
+    left: 5%;
+    top: 5%;
+    overflow: visible;
+    --web-animation: fadein 0.3s ease-out;
+    --web-action-type: page;
+    --web-action-target: capture.html;
+    cursor: pointer;
+}
+
+#back-arrow_bn {
+    fill: rgba(255, 255, 255, 1);
+    stroke: rgba(0, 0, 0, 0);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+
+.back-arrow_bn {
+    overflow: visible;
+    position: absolute;
+    width: 32px;
+    height: 20px;
+    transform: translate(-15px, -53px) matrix(1, 0, 0, 1, 8.9999, 63.9998) rotate(90deg);
+    transform-origin: center;
+    left: 0px;
+    top: 0px;
+}
+
+#back_bo {
+    fill: transparent;
+}
+
+.back_bo {
+    position: absolute;
+    overflow: visible;
+    width: 98px;
+    height: 37px;
+    left: 0px;
+    top: 0px;
+}
+
+#Back_bp {
+    left: 36px;
+    top: 5px;
+    position: absolute;
+    overflow: visible;
+    width: 42px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 1);
+}
+
+#return_capture_3 {
+    position: absolute;
+    width: 36.448px;
+    height: 31.64px;
+    right: 5%;
+    top: 5%;
+    overflow: visible;
+    --web-animation: fadein 0.3s ease-out;
+    --web-action-type: page;
+    --web-action-target: capture.html;
+    cursor: pointer;
+}
+
+#camera_line {
+    opacity: 0.5;
+    fill: transparent;
+}
+
+.camera_line {
+    overflow: visible;
+    position: absolute;
+    width: 35.973px;
+    height: 31.64px;
+    left: 0px;
+    top: 0px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+#camera {
+    position: absolute;
+    width: 36.448px;
+    height: 30.14px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+
+#saved_img {
+    fill: transparent;
+    stroke: rgba(112, 112, 112, 1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-dasharray: 1;
+    stroke-dashoffset: 0;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+
+.saved_img {
+    position: absolute;
+    overflow: visible;
+    width: 100%;
+    height: 50%;
+    top: 14%;
+}
+
+#similar_item {
+    position: absolute;
+    width: 72%;
+    height: 50px;
+    left: 14%;
+    bottom: 20%;
+    overflow: visible;
+    --web-animation: fadein 0.3s ease-out;
+    --web-action-type: page;
+    --web-action-target: result_insta.html;
+    cursor: pointer;
+}
+
+#simlar_item_box {
+    fill: rgba(237, 178, 84, 1);
+}
+
+.simlar_item_box {
+    position: absolute;
+    overflow: visible;
+    width: 100%;
+    height: 50px;
+    left: 0px;
+    top: 0px;
+}
+
+#simlar_item {
+    left: 0px;
+    top: 14.5px;
+    position: absolute;
+    overflow: visible;
+    width: 100%;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: rgba(41, 41, 41, 1);
+}
+
+#find_matching_item {
+    position: absolute;
+    width: 72%;
+    height: 50px;
+    left: 14%;
+    bottom: 10%;
+    overflow: visible;
+    --web-animation: fadein 0.3s ease-out;
+    --web-action-type: page;
+    --web-action-target: result_insta_matching.html;
+    cursor: pointer;
+}
+
+#matching_item_box {
+    fill: rgba(237, 178, 84, 1);
+}
+
+.matching_item_box {
+    position: absolute;
+    overflow: visible;
+    width: 100%;
+    height: 50px;
+    left: 0px;
+    top: 0px;
+}
+
+#matching_item {
+    left: 0px;
+    top: 14.5px;
+    position: absolute;
+    overflow: visible;
+    width: 100%;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: rgba(41, 41, 41, 1);
+}

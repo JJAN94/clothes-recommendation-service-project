@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2nd</title>
+<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="{{ url_for('static', filename='css/2nd.css') }}"/>
+<script id="applicationScript" type="text/javascript" src="{{ url_for('static', filename='js/2nd.js') }}"></script>
+</head>
+<body>
+<div id="n_nd">
+	<div onclick="location.href='{{ url_for('index') }}'" id="Back_1">
+		<svg class="back-arrow" viewBox="0 0 32 20">
+			<path id="back-arrow" d="M 31.09844207763672 5.464714050292969 C 31.67530059814453 4.867088317871094 32 4.051856994628906 32 3.201164245605469 C 32 2.350471496582031 31.67530059814453 1.535232543945312 31.09844207763672 0.9376068115234375 C 29.90296173095703 -0.301513671875 27.98036193847656 -0.3015213012695312 26.78488159179688 0.937591552734375 L 16.00936889648438 12.24656295776367 L 5.206916809082031 0.937591552734375 C 4.015762329101562 -0.312530517578125 2.084518432617188 -0.312530517578125 0.89337158203125 0.9375991821289062 C -0.2977981567382812 2.187728881835938 -0.29779052734375 4.214591979980469 0.89337158203125 5.464714050292969 L 13.85762786865234 19.07079696655273 C 15.05311584472656 20.30993270874023 16.9757080078125 20.30993270874023 18.17119598388672 19.0708122253418 L 31.09844207763672 5.464714050292969 Z">
+			</path>
+		</svg>
+		<svg class="back">
+			<rect id="back" rx="18.5" ry="18.5" x="0" y="0" width="98" height="37">
+			</rect>
+		</svg>
+		<div id="Back_w">
+			<span>Back</span>
+		</div>
+	</div>
+	<div onclick="location.href='{{ url_for('index') }}'" id="return_home">
+		<svg class="home_icon" viewBox="78.509 -168.102 28 28">
+			<path id="home_icon" d="M 92.84867858886719 -168.1020050048828 L 78.50899505615234 -158.9173889160156 L 78.50899505615234 -140.1022491455078 L 88.50868225097656 -140.1022491455078 L 88.50868225097656 -151.2748413085938 L 96.50856781005859 -151.2748413085938 L 96.50856781005859 -140.1022491455078 L 106.5089950561523 -140.1022491455078 L 106.5089950561523 -159.3590850830078 L 92.84867858886719 -168.1020050048828 Z">
+			</path>
+		</svg>
+		<svg class="home_box" viewBox="69.509 -176.102 46 44">
+			<path id="home_box" d="M 69.50901031494141 -176.1020050048828 L 115.5090103149414 -176.1020050048828 L 115.5090103149414 -132.1022491455078 L 69.50901031494141 -132.1022491455078 L 69.50901031494141 -176.1020050048828 Z">
+			</path>
+		</svg>
+	</div>
+	<div class="lottie_image">
+			<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+			<lottie-player src="https://assets3.lottiefiles.com/packages/lf20_ob2l65uz.json"  background="transparent"  speed="2"  style="width: auto; height: auto;"  loop  autoplay></lottie-player>
+	</div>
+	<div onclick="location.href='{{ url_for('capture') }}'" id="taking_picture">
+		<svg class="input_text">
+			<rect id="input_text" rx="25" ry="25" x="0" y="0" width=100% height="50">
+			</rect>
+		</svg>
+		<div id="input_pic">
+			<span>검색할 옷을 캡쳐 해주세요.</span>
+		</div>
+	</div>
+</div>
+</body>
+</html>

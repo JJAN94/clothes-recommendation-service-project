@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>capture</title>
+<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="{{ url_for('static', filename='css/capture.css') }}"/>
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+<script id="applicationScript" type="text/javascript" src="{{ url_for('static', filename='js/capture.js') }}"></script>
+</head>
+<body>
+<div id="capture">
+
+	<div onclick="location.href='{{ url_for('n_nd') }}'" id="Back_2">
+		<svg class="back-arrow_" viewBox="0 0 32 20">
+			<path id="back-arrow_" d="M 31.09844207763672 5.464714050292969 C 31.67530059814453 4.867088317871094 32 4.051856994628906 32 3.201164245605469 C 32 2.350471496582031 31.67530059814453 1.535232543945312 31.09844207763672 0.9376068115234375 C 29.90296173095703 -0.301513671875 27.98036193847656 -0.3015213012695312 26.78488159179688 0.937591552734375 L 16.00936889648438 12.24656295776367 L 5.206916809082031 0.937591552734375 C 4.015762329101562 -0.312530517578125 2.084518432617188 -0.312530517578125 0.89337158203125 0.9375991821289062 C -0.2977981567382812 2.187728881835938 -0.29779052734375 4.214591979980469 0.89337158203125 5.464714050292969 L 13.85762786865234 19.07079696655273 C 15.05311584472656 20.30993270874023 16.9757080078125 20.30993270874023 18.17119598388672 19.0708122253418 L 31.09844207763672 5.464714050292969 Z">
+			</path>
+		</svg>
+		<svg class="back_">
+			<rect id="back_" rx="18.5" ry="18.5" x="0" y="0" width="98" height="37">
+			</rect>
+		</svg>
+		<div id="Back">
+			<span>Back</span>
+		</div>
+	</div>
+	<form method="post" action="{{ url_for('tasks') }}" id="form_capture" enctype="multipart/form-data">
+		<input type="file" accept="image/*" id="uploadfile" onchange="loadFile(event)" name="uploadfile">
+	</form>
+	<div class="captured_img" id="preview">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+			<lottie-player src="https://assets3.lottiefiles.com/packages/lf20_ob2l65uz.json"  background="transparent"  speed="2"  style="width: auto; height: auto;"  loop  autoplay></lottie-player>		
+	</div>
+	<div id="upload" onclick="console.log(document.forms[0]); document.forms[0].submit();" >
+		<svg class="capture_text">
+			<rect id="capture_text" rx="25" ry="25" x="0" y="0" width=100% height="50">
+			</rect>
+		</svg>
+		<div id="capture_bd">
+			<span>전송</span>
+		</div>
+	</div>
+	<div id="capture_img" onclick="$('#uploadfile').click();">
+		<svg class="capture_text">
+			<rect id="capture_text" rx="25" ry="25" x="0" y="0" width=100% height="50">
+			</rect>
+		</svg>
+		<div id="capture_bd">
+			<span>파일업로드</span>
+		</div>
+	</div>
+
+</div>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+</html>
